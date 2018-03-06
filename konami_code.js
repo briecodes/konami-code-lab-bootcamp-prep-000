@@ -4,8 +4,9 @@ function init() {
   let i = 0;
   window.addEventListener('keydown', function(e){
   const key = parseInt(e.detail);
-  console.log(`Key pressed: ${key}`);
-  console.log(`Unparsed key pressed: ${e}`);
+  const keyDos = parseInt(e.which);
+  console.log(`Key dos pressed: ${keyDos}`);
+  console.log(`Unparsed key dos pressed: ${e}`);
   if (key === code[i]){
     i++;
     if(i === code.length){
