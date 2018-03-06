@@ -1,6 +1,19 @@
 const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
 
 function init() {
-  // Write your JavaScript code inside the init() function
-
+  let i = 0;
+  window.addEventListener('keydown', function(e){
+  const key = parseInt(e.detail);
+  console.log(key);
+  if (key === code[i]){
+    i++;
+    if(i === code.length){
+      alert("Congrats!");
+      i = 0;
+    }
+  }else{
+    console.log("Nice try, buddy.");
+    i = 0;
+  }
+ });
 }
