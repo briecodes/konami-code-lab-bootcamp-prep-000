@@ -7,6 +7,7 @@ function init() {
   console.log(key);
   if (key === code[i]){
     i++;
+    console.log(`i: ${i}; code length: ${code.length}`);
     if(i === code.length){
       window.alert("Congrats!");
       i = 0;
