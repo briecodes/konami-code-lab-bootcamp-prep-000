@@ -5,6 +5,7 @@ function init() {
   window.addEventListener('keydown', function(e){
   const key = parseInt(e.detail);
   const keyDos = event.getModifierState(e);
+  console.log(`Get Modifier State: ${keyDos}`)
   if (key === code[i]){
     i++;
     if(i === code.length){
