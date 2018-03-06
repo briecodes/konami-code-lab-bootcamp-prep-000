@@ -2,8 +2,7 @@ const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
 
 function init() {
   let i = 0;
-  const mochRah = document.getElementById('mocha');
-  mochRah.addEventListener('keydown', function(e){
+  document.addEventListener('keydown', function(e){
   const key = parseInt(e.detail || e.which);
   console.log(key);
   if (key === code[i]){
