@@ -4,7 +4,7 @@ function init() {
   let i = 0;
   window.addEventListener('keydown', function(e){
   const key = parseInt(e.detail);
-  console.log(key);
+  console.log(`Key pressed: ${key}`);
   if (key === code[i]){
     i++;
     if(i === code.length){
