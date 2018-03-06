@@ -5,6 +5,7 @@ function init() {
   window.addEventListener('keydown', function(e){
   const key = parseInt(e.detail);
   console.log(`Key pressed: ${key}`);
+  console.log(`Unparsed key pressed: ${e}`);
   if (key === code[i]){
     i++;
     if(i === code.length){
@@ -12,7 +13,6 @@ function init() {
       i = 0;
     }
   }else{
-    console.log("Nice try, buddy.");
     i = 0;
   }
  });
