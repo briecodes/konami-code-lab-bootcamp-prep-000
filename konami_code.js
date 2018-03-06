@@ -5,17 +5,17 @@ function init() {
   window.addEventListener('keydown', function(e) {
   console.log(e.detail || e.which);
 });
-//   window.addEventListener('keydown', function(e){
-//   const key = parseInt(e.detail);
-//   console.log(key);
-//   if (key === code[i]){
-//     i++;
-//     if(i === code.length){
-//       window.alert("Congrats!");
-//       i = 0;
-//     }
-//   }else{
-//     i = 0;
-//   }
-// });
+  window.addEventListener('keydown', function(e){
+  const key = parseInt(e.detail || e.which);
+  console.log(key);
+  if (key === code[i]){
+    i++;
+    if(i === code.length){
+      window.alert("Congrats!");
+      i = 0;
+    }
+  }else{
+    i = 0;
+  }
+});
 }
