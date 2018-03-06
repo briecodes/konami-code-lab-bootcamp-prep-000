@@ -4,6 +4,7 @@ function init() {
   let i = 0;
   window.addEventListener('keydown', function(e){
   const key = parseInt(e.detail);
+  const keyDos = event.getModifierState(e);
   if (key === code[i]){
     i++;
     if(i === code.length){
