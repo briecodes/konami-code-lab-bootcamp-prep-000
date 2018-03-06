@@ -9,8 +9,7 @@ function init() {
     i++;
     console.log(`i: ${i}; code length: ${code.length}`);
     if(i === code.length){
-      console.log("congrats???");
-      alert("Congrats!");
+      window.alert("Congrats!");
       i = 0;
     }
   }else{
